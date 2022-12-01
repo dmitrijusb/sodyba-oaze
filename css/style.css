@@ -17,14 +17,9 @@ body {
   overflow-x: hidden;
 }
 
-/* body::-webkit-scrollbar {
-  display: none;
-} */
-
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 16rem;
+.section-padding {
+  /* top right bottom left */
+  padding: 4rem 8rem;
 }
 
 /**********************/
@@ -41,7 +36,6 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  /* overflow-x: hidden; */
 }
 
 /**********************/
@@ -50,7 +44,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   padding: 2.4rem 4.8rem;
 }
 
@@ -65,7 +58,7 @@ header {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #e6e6e6;
+  color: #e9ecef;
   font-weight: 500;
   font-size: 1.4rem;
   transition: all 0.3s;
@@ -95,9 +88,6 @@ header {
 /**********************/
 /* Hero Section Text */
 /**********************/
-.hero-text-container {
-  justify-self: center;
-}
 
 .hero-textbox {
   display: flex;
@@ -127,31 +117,27 @@ header {
 .section-intro {
   display: flex;
   flex-direction: column;
-  gap: 2.8rem;
-  /* top right bottom left */
-  padding: 4.8rem 8rem 4.8rem 8rem;
+  gap: 5rem;
 }
 
 .intro {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  /* overflow: hidden; */
+  gap: 5rem;
 }
 
-.intro-second {
+.intro-grid-1-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.intro-grid-2-1 {
   grid-template-columns: 2fr 1fr;
 }
 
 .intro-text-box {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a;
+  padding: 4rem 0rem;
 }
 
-.intro-text-box:nth-of-type(1) {
-  padding: 4.8rem 6.4rem 6.4rem 0;
-}
-
-.intro .heading-secondary {
+.heading-secondary {
   color: #45260a;
   margin-bottom: 3.2rem;
   font-size: 3.6rem;
@@ -160,7 +146,6 @@ header {
 .intro-text {
   font-size: 1.8rem;
   line-height: 1.8;
-  margin-bottom: 4.8rem;
 }
 
 .intro-image-box {
@@ -184,13 +169,6 @@ header {
 /* CTA Section */
 /**********************/
 
-.section-cta {
-  overflow-x: hidden;
-  padding: 0rem 8rem;
-  /* background-color: aqua; */
-  margin-bottom: 4rem;
-}
-
 .test {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/sodyba-oaze/images/cta.webp");
@@ -202,10 +180,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.cta-container {
-  /* background-color: yellow; */
 }
 
 .cta-text-box {
@@ -244,12 +218,6 @@ header {
 /**********************/
 /* Footer Section*/
 /**********************/
-
-.section-footer {
-  overflow-x: hidden;
-  padding: 4rem 8rem 4rem 8rem;
-  /* background-color: aqua; */
-}
 
 .footer-container {
   display: grid;
@@ -297,4 +265,116 @@ header {
 .footer-logo:link,
 .footer-logo:visited {
   color: #555;
+}
+
+/**********************/
+/* Booking Button */
+/**********************/
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+
+  background-color: white;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.form-container {
+  padding: 4rem 0;
+}
+
+.form-heading {
+  font-family: "Nanum Gothic";
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+div.elem-group {
+  margin: 0.5rem 0;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: "Nanum Gothic";
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  border-radius: 0.3rem;
+  border: 0.2rem solid #777;
+  font-family: "Nanum Gothic";
+  width: 100%;
+  padding: 0.6rem;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 5rem;
+}
+
+hr {
+  border: 0.1rem dotted #ccc;
+}
+
+.form-submit {
+  font-family: "Nanum Gothic";
+  padding: 0.8rem 2rem;
+  border-radius: 0.9rem;
+  background-color: #879b89;
+  color: #dcf0f7;
+  cursor: pointer;
+  border: none;
+}
+
+.form-submit:hover {
+  padding: 0.8rem 2rem;
+  border-radius: 0.9rem;
+  background-color: #6c7c6d;
+  color: #dcf0f7;
 }
