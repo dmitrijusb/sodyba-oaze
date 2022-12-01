@@ -1,0 +1,147 @@
+/**********************/
+/* Footer Section */
+/**********************/
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #e9ecef !important;
+}
+
+/**********************/
+/* Hero Section */
+/**********************/
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/sodyba-oaze/images/hero.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+/**********************/
+/* Hero Section Text */
+/**********************/
+
+.hero-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  align-items: center;
+}
+
+.hero-header {
+  color: #e9ecef;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+}
+
+.hero-text {
+  color: #e9ecef;
+  padding: 0 24rem;
+  font-size: 1.6rem;
+}
+
+/**********************/
+/* Intro Section */
+/**********************/
+
+.section-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.intro {
+  display: grid;
+  gap: 5rem;
+}
+
+.intro-grid-1-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.intro-grid-2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.intro-text-box {
+  padding: 4rem 0rem;
+}
+
+.heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+  font-size: 3.6rem;
+}
+
+.intro-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.intro-image-box {
+  background-size: cover;
+  background-position: center;
+}
+
+.first-image {
+  background-image: url("../images/intro.webp");
+}
+
+.second-image {
+  background-image: url("../images/wakeboard.webp");
+}
+
+.third-image {
+  background-image: url("../images/fireplace.webp");
+}
+
+/**********************/
+/* CTA Section */
+/**********************/
+
+.test {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/sodyba-oaze/images/cta.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 48rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-text-box {
+  color: white;
+  text-align: center;
+}
+
+.third-heading {
+  font-size: 4.4rem;
+  margin-bottom: 4rem;
+}
+
+.cta-text {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.main-nav-link.end-cta:link,
+.main-nav-link.end-cta:visited {
+  padding: 1.6rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.main-nav-link.end-cta:hover,
+.main-nav-link.end-cta:active {
+  padding: 1.6rem 4rem;
+}

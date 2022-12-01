@@ -17,25 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+/* Padding Between Sections */
 .section-padding {
   /* top right bottom left */
   padding: 4rem 8rem;
-}
-
-/**********************/
-/* Hero Section */
-/**********************/
-
-.hero-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/sodyba-oaze/images/hero.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
 }
 
 /**********************/
@@ -58,7 +43,7 @@ header {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #e9ecef;
+  color: #515151;
   font-weight: 500;
   font-size: 1.4rem;
   transition: all 0.3s;
@@ -66,7 +51,7 @@ header {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #dcf0f7;
+  color: #c6d8de;
 }
 
 .main-nav-link.nav-cta:link,
@@ -75,6 +60,7 @@ header {
   border-radius: 0.9rem;
   background-color: #879b89;
   color: #dcf0f7;
+  font-weight: 600;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -83,130 +69,6 @@ header {
   border-radius: 0.9rem;
   background-color: #6c7c6d;
   color: #dcf0f7;
-}
-
-/**********************/
-/* Hero Section Text */
-/**********************/
-
-.hero-textbox {
-  display: flex;
-  flex-direction: column;
-  gap: 3.6rem;
-  align-items: center;
-}
-
-.hero-header {
-  color: #e9ecef;
-  font-size: 5.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75px;
-  font-weight: 600;
-}
-
-.hero-text {
-  color: #e9ecef;
-  padding: 0 24rem;
-  font-size: 1.6rem;
-}
-
-/**********************/
-/* Intro Section */
-/**********************/
-
-.section-intro {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-
-.intro {
-  display: grid;
-  gap: 5rem;
-}
-
-.intro-grid-1-2 {
-  grid-template-columns: 1fr 2fr;
-}
-
-.intro-grid-2-1 {
-  grid-template-columns: 2fr 1fr;
-}
-
-.intro-text-box {
-  padding: 4rem 0rem;
-}
-
-.heading-secondary {
-  color: #45260a;
-  margin-bottom: 3.2rem;
-  font-size: 3.6rem;
-}
-
-.intro-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
-}
-
-.intro-image-box {
-  background-size: cover;
-  background-position: center;
-}
-
-.first-image {
-  background-image: url("../images/intro.webp");
-}
-
-.second-image {
-  background-image: url("../images/wakeboard.webp");
-}
-
-.third-image {
-  background-image: url("../images/fireplace.webp");
-}
-
-/**********************/
-/* CTA Section */
-/**********************/
-
-.test {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/sodyba-oaze/images/cta.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: auto;
-  height: 48rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cta-text-box {
-  color: white;
-  text-align: center;
-}
-
-.third-heading {
-  font-size: 4.4rem;
-  margin-bottom: 4rem;
-}
-
-.cta-text {
-  font-size: 1.6rem;
-  margin-bottom: 4rem;
-}
-
-.main-nav-link.end-cta:link,
-.main-nav-link.end-cta:visited {
-  padding: 1.6rem 4rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.main-nav-link.end-cta:hover,
-.main-nav-link.end-cta:active {
-  padding: 1.6rem 4rem;
 }
 
 .logo {
