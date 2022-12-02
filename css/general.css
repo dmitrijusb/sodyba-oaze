@@ -126,7 +126,7 @@ header {
 
 .footer-logo:link,
 .footer-logo:visited {
-  color: #555;
+  color: #555 !important;
 }
 
 /**********************/

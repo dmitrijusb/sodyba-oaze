@@ -6,6 +6,10 @@
   color: #e9ecef !important;
 }
 
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #c6d8de !important;
+}
 /**********************/
 /* Hero Section */
 /**********************/
