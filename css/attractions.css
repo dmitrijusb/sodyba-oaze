@@ -1,0 +1,59 @@
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #6c7c6d;
+}
+
+.section-attraction {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.intro {
+  display: grid;
+  gap: 5rem;
+}
+
+.intro-grid-1-2 {
+  grid-template-columns: 1fr 3fr;
+}
+
+.intro-grid-2-1 {
+  grid-template-columns: 3fr 1fr;
+}
+
+.intro-text-box {
+  padding: 10rem 0rem;
+}
+
+.heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+  font-size: 3.6rem;
+}
+
+.intro-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.intro-image-box {
+  background-size: cover;
+  background-position: center;
+}
+
+.first-image {
+  background-image: url("../images/35.jpeg");
+}
+
+.second-image {
+  background-image: url("../galerija/images/29.webp");
+}
+
+.third-image {
+  background-image: url("../images/36.jpg");
+}
+
+.fourth-image {
+  background-image: url("../images/37.jpg");
+}
