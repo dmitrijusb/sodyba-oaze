@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Degučių Oazė - Pabėk iš Miesto</title>
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+  </head>
+  <body>
+      <header>
+        <a href="../" class="logo main-nav-link">Degučių Oazė</a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a href="#" class="main-nav-link">Apie</a></li>
+            <li><a href="../apgyvendinimas/" class="main-nav-link">Apgyvendimas</a></li>
+            <li><a href="../pramogos/" class="main-nav-link">Pramogos</a></li>
+            <li><a href="../galerija/" class="main-nav-link">Galerija</a></li>
+            <li><a href="../kontaktai/" class="main-nav-link">Kontaktai</a></li>
+            <li><a href="#" class="main-nav-link nav-cta">Rezervuoti</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="about-section section-padding">
+          <div class="about-textbox">
+            <h2 class="heading-secondary">Apie mus</h2>
+            <p class="about-text">„Degučių oazė“ yra privatus namas besiribojantis su Uklueleto įlanka. Mes vertiname ir skiriame didelį dėmesį ryšiui su gamta, todėl namą pastatėme visiškai kitaip nei kitose vietose, kuriose galbūt buvote apsistoję – tai kapsulė, skirta pasikrauti nuo kasdienio gyvenimo užimtumo. 
+              Aplink rasite daugybę senų medžių ir įvairios gyvūnijos. Galėsite mėgautis miško garsais bei paukščių čiulbėjimu, nuraminti mintis vaikštant pėsčiųjų takais, banglenčių paplūdimiais ir nacionaliniu parku.</p></br>
+              <p class="about-text">Atgaukite jėgas ilsėdamiesi miške. 
+                Namo aukštos lubos, panoraminiai langai ir dominuojantis natūralios medienos interjeras padės užmegzti ryšį su gamta net būnant viduje.  Miegamuosiuose didelės lovos su aukščiausios kokybės "Lonas" čiužiniais užtikrins ramų miegą. Didelis vonios kambarys su privačiu vaizdu tik į medžių viršūnes ir vandenyną leis mėgautis vandens procedūromis ir patirti visišką atsipalaidavimą. Ilgas prieškambaris, pilnas drabužių kabliukų, jungiasi prie pagrindinės svetainės su jaukiu židiniu, pilna būtiniausios technikos virtuve, su daug funkcionalios erdvės. Svetainėje erdvi sofa ir natūralaus židinio šiluma leis mėgautis ilgais vakarais.</p>
+          </div>
+          <div class="about-image"></div>
+        </section>
+      </main>
+
+  <footer class="section-footer section-padding">
+    <div class="footer-container">
+      <nav class="nav-col">
+        <p class="footer-heading">Degučių Oazė</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Apie</a></li>
+          <li><a class="footer-link" href="../apgyvendinimas/">Apgyvendinimas</a></li>
+          <li><a class="footer-link" href="../pramogos/">Pramogos</a></li>
+          <li><a class="footer-link" href="../galerija/">Galerija</a></li>
+          <li><a class="footer-link" href="../kontaktai/">Kontaktai</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-col">
+        <a href="#" class="logo main-nav-link footer-logo">Degučių Oazė</a>
+      </div>
+
+      <div class="socials-col">
+        <p class="footer-heading">Sekite mus</p>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://www.instagram.com"
+              ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.facebook.com"
+              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.twitter.com"
+              ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+        </ul>
+
+      </div>
+
+    
+  </footer>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="form-container">
+        
+          <form action="https://getform.io/f/82f70334-3470-4e8b-8f6c-598bb606f006" method="post">
+            <!-- <h2 class="form-heading">Užpildykite formą</h2> -->
+            <div class="elem-group">
+              <label for="name">Jūsų vardas</label>
+              <input type="text" id="name" name="visitor_name"  pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+              <label for="email">Jūsų paštas</label>
+              <input type="email" id="email" name="visitor_email" required>
+            </div>
+            <div class="elem-group">
+              <label for="phone">Your telefonas</label>
+              <input type="tel" id="phone" name="visitor_phone"  required>
+            </div>
+            <hr>
+            <div class="elem-group inlined">
+              <label for="adult">Suaugusiųjų skaičius</label>
+              <input type="number" id="adult" name="total_adults" min="1" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="child">Vaikų skaičius</label>
+              <input type="number" id="child" name="total_children" min="0" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="checkin-date">Atvykimo Data</label>
+              <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="checkout-date">Išvykimo Data</label>
+              <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+            <hr>
+            <div class="elem-group">
+              <label for="message">Jūsų žinutė</label>
+              <textarea id="message" name="visitor_message" required></textarea>
+            </div>
+            <!-- <a href="#" class="form-submit" type="submit">Rezervuoti</a> -->
+            <button class="form-submit" type="submit">Rezervuoti</button>
+          </form>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <script src="../script/booking.js"></script>
+  <script src="../script/script.js"></script>
+</html>

@@ -10,6 +10,7 @@
 .main-nav-link:active {
   color: #c6d8de !important;
 }
+
 /**********************/
 /* Hero Section */
 /**********************/
@@ -75,7 +76,7 @@
 }
 
 .intro-text-box {
-  padding: 4rem 0rem;
+  padding: 8rem 0rem;
 }
 
 .heading-secondary {
