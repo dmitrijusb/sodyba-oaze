@@ -50,3 +50,14 @@ checkinElem.setAttribute("min", dateTomorrow);
 checkinElem.onchange = function () {
   checkoutElem.setAttribute("min", this.value);
 };
+
+//////////////////////
+///Mobile Nav//
+//////////////////////
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+  // headerEl.classList.add("nav-open");
+});

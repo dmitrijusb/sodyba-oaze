@@ -1,6 +1,8 @@
 .contacts-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 6rem;
 }
 
 .maps {
@@ -20,7 +22,7 @@
 
 .maps-container,
 .contacts-textbox {
-  padding: 8rem;
+  /* padding: 8rem; */
 }
 
 .contacts-textbox {
@@ -57,22 +59,27 @@
   font-size: 3.6rem;
 }
 
-/* Add your preloader styles here */
-#preloader {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ffffff;
-  z-index: 9999;
-}
+/* Media */
+/* 992px */
+@media (max-width: 62em) {
+  .contacts-section {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
 
-/* Add your preloader animation styles here */
-.preloader-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  .contacts-textbox {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .contacts-heading {
+    font-size: 3.2rem;
+  }
+}
+/* 740px */
+@media (max-width: 47em) {
+  .maps-container,
+  .contacts-textbox {
+    z-index: -1;
+  }
 }
