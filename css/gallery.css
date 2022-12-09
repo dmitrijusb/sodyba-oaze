@@ -1,22 +1,8 @@
-.main-nav-link:link,
-.main-nav-link:visited {
-  color: #515151;
-}
-
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #6c7c6d;
-}
-
 .gallery-section {
   width: 100%;
   margin: 2rem auto;
   padding: 4rem 8rem;
 }
-
-/* .section-padding {
-  margin-left: 4rem;
-} */
 
 .gallery {
   display: grid;
