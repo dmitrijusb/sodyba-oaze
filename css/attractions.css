@@ -52,3 +52,46 @@
 .fourth-image {
   background-image: url("../images/37.jpg");
 }
+
+/* 1000px */
+@media (max-width: 65em) {
+  .intro-grid-1-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .first-image,
+  .third-image {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .intro-grid-3-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .intro-text-box {
+    padding: 2rem 0rem;
+  }
+
+  .intro {
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* 500px */
+@media (max-width: 32em) {
+  .section-padding {
+    margin: 2rem 4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .intro-text {
+    font-size: 1.6rem;
+  }
+}

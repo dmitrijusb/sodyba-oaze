@@ -68,4 +68,8 @@
   .w-6 {
     grid-column: span 1;
   }
+
+  .section-padding {
+    padding: 4rem 4rem;
+  }
 }

@@ -288,7 +288,9 @@ hr {
   padding: 1.6rem 4rem;
 }
 
+/**********************/
 /* Mobile Nav */
+/**********************/
 
 .btn-mobile-nav {
   border: none;
@@ -307,7 +309,9 @@ hr {
   display: none;
 }
 
-/* Responsiveness */
+/**********************/
+/* Responsive */
+/**********************/
 
 @media (max-width: 62em) {
   .modal {
@@ -363,7 +367,7 @@ hr {
 
   .main-nav-link:link,
   .main-nav-link:visited {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   .logo.main-nav-link:link,
@@ -385,8 +389,18 @@ hr {
   .modal {
     width: 60%;
   }
+
+  .third-heading {
+    font-size: 3.2rem;
+  }
+
+  .cta-text {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 }
 
+/* 560px */
 @media (max-width: 35em) {
   .modal {
     width: 65%;
