@@ -345,6 +345,10 @@ hr {
     visibility: hidden;
   }
 
+  .logo {
+    align-self: center;
+  }
+
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;

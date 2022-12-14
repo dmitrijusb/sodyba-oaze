@@ -11,6 +11,11 @@
   color: #c6d8de !important;
 }
 
+.footer-logo:link,
+.footer-logo:visited {
+  color: #555 !important;
+}
+
 /**********************/
 /* Hero Section */
 /**********************/
@@ -108,45 +113,73 @@
 }
 
 /**********************/
-/* CTA Section */
+/* Media*/
 /**********************/
+/* 1200x */
+@media (max-width: 75em) {
+  .intro-grid-1-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 
-.cta-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/sodyba-oaze/images/cta.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: auto;
-  height: 48rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .intro {
+    display: grid;
+    gap: 0;
+  }
+
+  .first-image,
+  .third-image {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .intro-text-box {
+    padding: 4rem 0;
+  }
+
+  .section-padding {
+    margin-top: 0;
+  }
+
+  .intro-grid-2-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .section-intro {
+    gap: 0;
+  }
+
+  .icon-mobile-nav {
+    color: #fff;
+  }
 }
 
-.cta-text-box {
-  color: white;
-  text-align: center;
+@media (max-width: 47em) {
+  .hero-section {
+    grid-template-rows: 1fr 6fr;
+  }
+
+  .hero-textbox {
+    align-self: center;
+  }
+
+  .hero-header {
+    font-size: 4rem;
+  }
+
+  .hero-text {
+    padding: 0 12rem;
+  }
+
+  .main-nav-link.mobile-nav {
+    color: #555 !important;
+  }
 }
 
-.third-heading {
-  font-size: 4.4rem;
-  margin-bottom: 4rem;
-}
-
-.cta-text {
-  font-size: 1.6rem;
-  margin-bottom: 4rem;
-}
-
-.main-nav-link.end-cta:link,
-.main-nav-link.end-cta:visited {
-  padding: 1.6rem 4rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.main-nav-link.end-cta:hover,
-.main-nav-link.end-cta:active {
-  padding: 1.6rem 4rem;
+/* 500px */
+@media (max-width: 31.25em) {
+  .section-padding {
+    margin: 2rem 4rem;
+  }
 }
